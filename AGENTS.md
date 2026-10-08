@@ -45,6 +45,7 @@ Read only what the task touches, plus README and this file.
 | Any frontend change | `frontend/FRONTEND.md` |
 | Where a frontend file goes | `frontend/FOLDER_STRUCTURE.md` |
 | Claiming done, frontend | `frontend/QUALITY.md` and `frontend/COMMANDS.md` |
+| The layer does not say, or something was already rejected | `README.md` and `DECISIONS.md` |
 
 ## Hard rules
 

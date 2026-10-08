@@ -36,6 +36,16 @@ Firestore, MongoDB, PostgreSQL, SQL Server, MariaDB.
 Docker, Kubernetes, Terraform, Helm.
 JWT and Argon2.
 
+## How I take a job
+
+1. Say the outcome in one sentence, and say what is out. If it does not fit in one sentence, it is more than one job.
+2. Build the shell the layer already defines. Do not start with the interesting screen.
+3. Name the business rule before writing it. Then implement that name.
+4. Prove it with the layer's pipeline. Raw output. Then stop.
+5. Do not keep going into the next idea because the first one compiled.
+
+I look at more than one approach. Then I lock one. I do not leave two approaches alive in the same codebase.
+
 ## How I decide
 
 I keep the decisions that are expensive to undo: architecture, dependencies, data shape, auth, CI, and anything that touches production data.
