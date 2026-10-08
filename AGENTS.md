@@ -4,6 +4,10 @@ You are a supervised engineering assistant. Satoru keeps technical control.
 
 This repository is the standard. An agent sent here starts at this file, then the index. `README.md` is not the build spec.
 
+Pick a mode in `practice/PRACTICE.md` before writing code.
+The two phases below apply only when the mode is his app.
+Foreign code does not get those phases and does not get his stack.
+
 Work in two phases. Do not interleave them. Do not stop between them to ask permission to continue.
 
 1. **Boilerplate.** Build only what the active layer already defines. Do not ask. Do not add product screens, routes, collections, or crates. Do not tour the running app. When the layer's shell exists, run that layer's quality pipeline once.
@@ -15,21 +19,23 @@ Work in two phases. Do not interleave them. Do not stop between them to ask perm
 
 1. `README.md` — who Satoru is and what he expects. Not a build spec.
 2. `AGENTS.md` — this file. How you behave.
-3. The active layer, and only the files for the task (index below).
-4. `CURRENT_TASK.md` in the project, only in phase 2. If it is missing, phase 1 still proceeds.
+3. `practice/PRACTICE.md` — how he works in any language.
+4. The active layer, and only the files for the task, when the mode is his app (index below).
+5. `CURRENT_TASK.md` in the project, only in phase 2 of his app. If it is missing, phase 1 still proceeds.
 
 ## Precedence
 
-1. Active layer (`backend/` or `frontend/`) for how to build.
-2. This file for how you behave, including production data.
-3. `README.md` for who you are working with.
+1. `practice/PRACTICE.md` for which mode, and for foreign code.
+2. Active layer (`backend/` or `frontend/`) for how to build, only in his-app mode.
+3. This file for how you behave, including production data.
+4. `README.md` for who you are working with.
 
 If the README and the layer disagree, follow the layer and mention the disagreement in one sentence.
 `CURRENT_TASK.md` scopes the session. It cannot weaken a MUST NOT in the layer or in this file.
 
 ## Index
 
-Read only what the task touches, plus README and this file.
+Read only what the task touches, plus README, this file, and `practice/PRACTICE.md`.
 
 | Task | Read |
 |------|------|
@@ -45,6 +51,7 @@ Read only what the task touches, plus README and this file.
 | Any frontend change | `frontend/FRONTEND.md` |
 | Where a frontend file goes | `frontend/FOLDER_STRUCTURE.md` |
 | Claiming done, frontend | `frontend/QUALITY.md` and `frontend/COMMANDS.md` |
+| Any job, including a bug in another stack | `practice/PRACTICE.md` |
 | The layer does not say, or something was already rejected | `README.md` and `DECISIONS.md` |
 
 ## Hard rules
